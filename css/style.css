@@ -1,15 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+:root{
+    --color-orange: #ff702a;
+    --color-white: #fff;
+    --color-black: #000;
+    --background: #1e1d2b;
+}
+
+body{
+    background-color: var(--background);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Decoracion letra */
+.infoPrincipal .textOrange{
+    font-size: 5em;
+}
+
+.infoPrincipal .textWhite{
+    font-size: 2em;
+}
+
+h6{
+    font-size: 1em;
+}
+
+.infoSecundaria h2{
+    font-size: 3em;
+}
+
+.infoSecundaria p{
+    font-size: 1.5em;
+}
+
+.contenedorTercero h2{
+    font-size: 3em;
+}
+
+.contenedorTercero p{
+    font-size: 1em;
+
+}
+
+.textOrange{
+    color: var(--color-orange);
+}
+
+.textWhite{
+    color: var(--color-white);
+}
+
+.textBlack{
+    color: var(--color-black);
+}
+
+/* Nav */
 .contenedorNav{
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
+    align-items: center;
+    background-color: var(--background);
+    padding: 10px;
 }
 
-.menuNav{
+.menuNav ul,li,a{
     display: flex;
+    gap: 10px;
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.contenedorMain{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+/* Parte uno */
+.contenedorPrincipal{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));    
+    place-items: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    */
+    border: 1px solid red; 
+}
+
+.imgPrincipal img{
+    width: 400px;
+}
+
+/* Parte dos */
+.contenedorSecundaria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));    
+    place-items: center;
+    border: 1px solid red; 
+}
+
+/* Parte Tres */
+.contenedorTercero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red; 
+}
+
+.contenedorImg{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menuImgUno{
+    display: grid;
+    place-items: center;
+}
+
+.menuImgUno img{
+    width: 200px;
+    border: 1px solid red;
+}
+
+/* parte cuarta */
+.contenedorQuinto{
+    display: grid;
+    place-items: center;
+    border: 1px solid red; 
+}
+
+/* FOOTER */
+.contenedorFooter{
+    display: flex;
+    justify-content: space-around;
 }
